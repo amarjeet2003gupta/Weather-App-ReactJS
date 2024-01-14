@@ -1,0 +1,133 @@
+.container{
+    width: 75vw;
+    height: 75vh;
+    max-height: 75vw;
+    max-width: 75vh;
+    margin: auto;
+    margin-top: 10vh;
+    border-radius: 1vh;
+    background: linear-gradient(180deg, #130754, #3b2f80);
+}
+
+.top-bar{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    padding-top: 5vh;
+    height: 8vh;
+}
+.top-bar input{
+    display: flex;
+    width: 60%;
+    background: #ebfffc;
+    border: none;
+    outline: none;
+    border-radius: 5vh;
+    padding-left: 7%;
+    color: #626262;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+.top-bar .search-icon{
+    display: flex;
+    width: 50px;
+    height: 8vh;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.top-bar .search-icon:active{
+    background-color: rgb(42, 40, 40);
+}
+
+.top-bar .search-icon img{
+    border-radius: 50%;
+}
+
+.weather-image img, .element img{
+    width: 10vw;
+    height: 10vh;
+    max-width: 10vh;
+    max-height: 10vw;
+
+}
+
+.weather-image{
+    margin-top: calc(max(2vw,2vh));
+    display: flex;
+    justify-content: center;
+}
+
+.weather-temp{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: calc(min(10vh,10vw));
+    font-weight: 400;
+}
+
+.weather-location{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: calc(min(4vh,4vw));
+    font-weight: 400;
+}
+
+.data-container{
+    margin-top: 5vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.element{
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 10%;
+}
+
+.element img{
+    width: 30%;
+    height: 30%;
+}
+
+/* 
+@media (max-width: 650px) {
+    .container {
+        width: 90vw;
+        max-width: none;
+        max-height: none;
+    }
+
+    .weather-temp {
+        font-size: 4vh; 
+    }
+
+    .weather-location {
+        font-size: 2vh; 
+    }
+
+
+    .weather-image img,
+    .element img {
+        width: 20%;
+        height: 20%;
+        max-width: none;
+        max-height: none;
+    }
+
+    .weather-image {
+        margin-top: 2vh;
+    }
+
+    .weather-temp {
+        font-size: 3vh;
+    }
+
+    .weather-location {
+        font-size: 2vh; 
+    }
+} */
